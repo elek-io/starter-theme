@@ -2,66 +2,35 @@
   "name": "elek.io starter theme",
   "description": "A description",
   "version": "0.0.1",
-  "repository": "git@github.com:Nils-Kolvenbach/website.git",
-  "homepage": "https://github.com/Nils-Kolvenbach/website",
-  "bugs": "https://github.com/Nils-Kolvenbach/website/issues",
+  "repository": "git@github.com:elek-io/starter-theme.git",
+  "homepage": "https://github.com/elek-io/starter-theme",
   "author": "Nils Kolvenbach <info@nils-kolvenbach.de>",
   "license": "",
   "scripts": {
     "build": "npm run build",
     "develop": "npm run serve"
   },
-  "layouts": {
-    "main": "src/.vuepress/theme/Layout.vue",
-    "pages": [
-      {
-        "id": "homepage",
-        "name": "Homepage",
-        "description": "Layout for the first page of your website.",
-        "path": "src/.vuepress/theme/Home.vue"
-      },
-      {
-        "id": "page",
-        "name": "Page",
-        "description": "Layout for a normal page.",
-        "path": "src/.vuepress/theme/Page.vue"
-      },
-      {
-        "id": "curriculumVitae",
-        "name": "Curriculum Vitae",
-        "description": "Layout for the CV page.",
-        "path": "src/.vuepress/theme/CurriculumVitae.vue"
-      },
-      {
-        "id": "tutorials",
-        "name": "Tutorials",
-        "description": "Layout for the tutorials index page.",
-        "path": "src/.vuepress/theme/tutorials/Index.vue",
-        "children": [
-          {
-            "id": "tutorial",
-            "name": "Tutorial",
-            "description": "Layout for the tutorials detail page.",
-            "path": "src/.vuepress/theme/tutorials/Detail.vue",
-            "children": [
-              {
-                "id": "lesson",
-                "name": "Lesson",
-                "description": "Layout for the tutorials lesson page.",
-                "path": "src/.vuepress/theme/tutorials/Lesson.vue"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "errors": [
-      {
-        "id": "404",
-        "name": "Not found",
-        "description": "Layout for the 404 error page.",
-        "path": "src/.vuepress/theme/404.vue"
-      }
-    ]
-  }
+  "layouts": [
+    {
+      "id": "main",
+      "type": "main",
+      "name": "Main layout",
+      "description": "",
+      "path": "src/App.vue"
+    },
+    {
+      "id": "homepage",
+      "type": "page",
+      "name": "Homepage",
+      "description": "Layout for the first page of your website.",
+      "path": "src/views/Home.vue"
+    },
+    {
+      "id": "about",
+      "type": "page",
+      "name": "About",
+      "description": "Layout for the about page of your website.",
+      "path": "src/views/Home.vue"
+    }
+  ]
 }
