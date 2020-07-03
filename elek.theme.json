@@ -30,7 +30,7 @@
       "type": "page",
       "name": "About",
       "description": "Layout for the about page of your website.",
-      "path": "src/views/Home.vue"
+      "path": "src/views/About.vue"
     }
   ]
 }
