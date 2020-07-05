@@ -1,0 +1,108 @@
+{
+  "name": "The first project",
+  "description": "",
+  "version": "1.0.0",
+  "status": "",
+  "routes": [
+    {
+      "name": "My first page",
+      "path": "/my-first-page"
+    },
+    {
+      "name": "Another page",
+      "path": "/another-page"
+    },
+    {
+      "name": "Foo bar",
+      "path": "/foo/bar/foo-bar"
+    }
+  ],
+  "pages": [
+    {
+      "name": "My first page",
+      "path": "/my-first-page",
+      "layout": {
+        "id": "homepage",
+        "path": "src/views/Home.vue"
+      },
+      "blocks": [
+        {
+          "id": "welcome-message",
+          "language": "en",
+          "content": "<h1>Hello World!</h1>\n<p>Lorem impsum dolor...</p>\n<ul>\n<li>Lorem</li>\n<li>ipsum</li>\n<li>dolor</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "name": "Another page",
+      "path": "/another-page",
+      "layout": {
+        "id": "about",
+        "path": "src/views/About.vue"
+      },
+      "blocks": []
+    },
+    {
+      "name": "Foo bar",
+      "path": "/foo/bar/foo-bar",
+      "layout": {
+        "id": "about",
+        "path": "src/views/About.vue"
+      },
+      "blocks": []
+    }
+  ],
+  "theme": {
+    "name": "elek.io-starter-theme",
+    "description": "A description",
+    "version": "0.1.0",
+    "repository": "git@github.com:elek-io/starter-theme.git",
+    "homepage": "https://github.com/elek-io/starter-theme",
+    "author": "Nils Kolvenbach <info@nils-kolvenbach.de>",
+    "license": "",
+    "private": true,
+    "layouts": [
+      {
+        "id": "main",
+        "type": "main",
+        "name": "Main layout",
+        "description": "",
+        "path": "src/App.vue"
+      },
+      {
+        "id": "homepage",
+        "type": "page",
+        "name": "Homepage",
+        "description": "Layout for the first page of your website.",
+        "path": "src/views/Home.vue"
+      },
+      {
+        "id": "about",
+        "type": "page",
+        "name": "About",
+        "description": "Layout for the about page of your website.",
+        "path": "src/views/About.vue"
+      }
+    ],
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build",
+      "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+      "core-js": "^3.6.5",
+      "vue": "^2.6.11",
+      "vue-router": "^3.2.0"
+    },
+    "devDependencies": {
+      "@vue/cli-plugin-babel": "~4.4.0",
+      "@vue/cli-plugin-eslint": "~4.4.0",
+      "@vue/cli-plugin-router": "~4.4.0",
+      "@vue/cli-service": "~4.4.0",
+      "babel-eslint": "^10.1.0",
+      "eslint": "^6.7.2",
+      "eslint-plugin-vue": "^6.2.2",
+      "vue-template-compiler": "^2.6.11"
+    }
+  }
+}
