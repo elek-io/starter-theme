@@ -1,19 +1,19 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <ElekIoBlock id="about-content" :blocks="blocks"></ElekIoBlock>
+    <ElekIo elek-io type="block" id="about-content" :blocks="blocks"></ElekIo>
     <hr>
-    <ElekIoBlock id="about-footer" :not="['heading']" :blocks="blocks"></ElekIoBlock>
+    <ElekIo elek-io type="block" id="about-footer" :not="['heading']" :blocks="blocks"></ElekIo>
   </div>
 </template>
 
 <script>
-import ElekIoBlock from '@/components/ElekIoBlock.vue'
+import ElekIo from '@/components/ElekIo.vue'
 
 export default {
   name: 'About',
   components: {
-    ElekIoBlock
+    ElekIo
   },
   props: {
     blocks: Array

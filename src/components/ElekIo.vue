@@ -1,10 +1,10 @@
 <template>
-  <div :id="id" elek-io type="block" :only="this.only.join(',')" :not="this.not.join(',')" v-html="block(id)"></div>
+  <div :id="id" :only="this.only.join(',')" :not="this.not.join(',')" v-html="block(id)"></div>
 </template>
 
 <script>
 export default {
-  name: 'ElekIoBlock',
+  name: 'ElekIo',
   props: {
     id: String,
     only: {
