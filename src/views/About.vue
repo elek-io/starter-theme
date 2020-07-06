@@ -1,15 +1,20 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <elek-io-block id="about-content" v-html="blocks[0].content">Start writing something about this page here</elek-io-block>
+    <ElekIoBlock id="about-content" :blocks="blocks"></ElekIoBlock>
     <hr>
-    <elek-io-block id="about-footer" not="heading" v-html="blocks[1].content"></elek-io-block>
+    <ElekIoBlock id="about-footer" :not="['heading']" :blocks="blocks"></ElekIoBlock>
   </div>
 </template>
 
 <script>
+import ElekIoBlock from '@/components/ElekIoBlock.vue'
+
 export default {
   name: 'About',
+  components: {
+    ElekIoBlock
+  },
   props: {
     blocks: Array
   }
