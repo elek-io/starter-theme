@@ -5,6 +5,7 @@
   "description": "A description",
   "author": "Nils Kolvenbach <info@nils-kolvenbach.de>",
   "buildDir": "dist",
+  "exportFile": ".elek.io/project.json",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
