@@ -29,6 +29,32 @@
     "vue-template-compiler": "^2.6.11"
   },
   "homepage": "https://github.com/elek-io/starter-theme",
+  "navigations": [
+    {
+      "id": "main",
+      "items": {
+        "maximum": 10
+      }
+    },
+    {
+      "id": "footerLeft",
+      "items": {
+        "maximum": 5
+      },
+      "subitems": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "footerRight",
+      "items": {
+        "maximum": 5
+      },
+      "subitems": {
+        "allowed": false
+      }
+    }
+  ],
   "layouts": [
     {
       "id": "main",
