@@ -1,11 +1,7 @@
 {
-  "name": "elek.io-starter-theme",
+  "name": "starter-theme",
   "version": "0.1.0",
   "private": true,
-  "description": "A description",
-  "author": "Nils Kolvenbach <info@nils-kolvenbach.de>",
-  "buildDir": "dist",
-  "exportFile": ".elek.io/project.json",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -13,90 +9,21 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
-    "@vue/cli-plugin-router": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "prerender-spa-plugin": "^3.2.1",
-    "vue-cli-plugin-prerender-spa": "~1.1.6",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  },
-  "homepage": "https://github.com/elek-io/starter-theme",
-  "navigations": [
-    {
-      "id": "main",
-      "items": {
-        "maximum": 10
-      }
-    },
-    {
-      "id": "footerLeft",
-      "items": {
-        "maximum": 5
-      },
-      "subitems": {
-        "allowed": false
-      }
-    },
-    {
-      "id": "footerRight",
-      "items": {
-        "maximum": 5
-      },
-      "subitems": {
-        "allowed": false
-      }
-    }
-  ],
-  "layouts": [
-    {
-      "id": "main",
-      "type": "main",
-      "name": "Main layout",
-      "description": "",
-      "path": "src/App.vue"
-    },
-    {
-      "id": "homepage",
-      "type": "page",
-      "name": "Homepage",
-      "description": "Layout for the first page of your website.",
-      "path": "src/views/Home.vue"
-    },
-    {
-      "id": "post",
-      "type": "page",
-      "name": "Post",
-      "description": "Layout for a blog post.",
-      "path": "src/views/Post.vue",
-      "taxonomies": [
-        {
-          "id": "category",
-          "type": "select",
-          "value": ""
-        },
-        {
-          "id": "tags",
-          "type": "multiselect",
-          "value": []
-        }
-      ]
-    },
-    {
-      "id": "about",
-      "type": "page",
-      "name": "About",
-      "description": "Layout for the about page of your website.",
-      "path": "src/views/About.vue"
-    }
-  ],
-  "license": "",
-  "repository": "git@github.com:elek-io/starter-theme.git"
+  }
 }

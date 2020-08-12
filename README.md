@@ -1,4 +1,4 @@
-# elek.io starter theme
+# starter-theme
 
 ## Project setup
 ```

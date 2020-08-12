@@ -1,265 +1,265 @@
 {
-  "name": "The first project",
-  "description": "",
-  "version": "1.0.0",
-  "status": "",
-  "pages": [
-    {
-      "id": "8cf535e2-08c0-4bf4-8e1b-58b47689736d",
-      "name": "Welcome to elek.io!",
-      "language": "en-US",
-      "path": "/",
-      "stage": "published",
-      "layout": {
-        "id": "homepage",
-        "type": "page",
-        "name": "Homepage",
-        "description": "Layout for the first page of your website.",
-        "path": "src/views/Home.vue"
-      },
-      "content": [
+    "name": "The first project",
+    "description": "",
+    "version": "1.0.0",
+    "status": "",
+    "pages": [
         {
-          "id": "welcome-message",
-          "html": "<p>We are very happy to have you on board. This page was created for you.\nYou can use it as a starting point or delete it. If you need help, consider visiting one of these pages:</p>\n<ul>\n<li><a href=\"https://elek.io\">An introduction to the elek.io client</a></li>\n<li><a href=\"https://elek.io\">Working with pages</a></li>\n<li><a href=\"https://elek.io\">Choosing a theme</a></li>\n<li><a href=\"https://elek.io\">Deploying yout first project</a></li>\n</ul>\n"
+            "id": "8cf535e2-08c0-4bf4-8e1b-58b47689736d",
+            "name": "Welcome to elek.io!",
+            "language": "en-US",
+            "path": "/",
+            "stage": "published",
+            "layout": {
+                "id": "homepage",
+                "type": "page",
+                "name": "Homepage",
+                "description": "Layout for the first page of your website.",
+                "path": "src/views/Home.vue"
+            },
+            "content": [
+                {
+                    "id": "welcome-message",
+                    "html": "<p>We are very happy to have you on board. This page was created for you.\nYou can use it as a starting point or delete it. If you need help, consider visiting one of these pages:</p>\n<ul>\n<li><a href=\"https://elek.io\">An introduction to the elek.io client</a></li>\n<li><a href=\"https://elek.io\">Working with pages</a></li>\n<li><a href=\"https://elek.io\">Choosing a theme</a></li>\n<li><a href=\"https://elek.io\">Deploying yout first project</a></li>\n</ul>\n"
+                }
+            ]
+        },
+        {
+            "id": "9f374891-a1b9-422d-931b-32595175851b",
+            "name": "Another page",
+            "language": "en-US",
+            "path": "/another-page",
+            "stage": "wip",
+            "layout": {
+                "id": "about",
+                "type": "page",
+                "name": "About",
+                "description": "Layout for the about page of your website.",
+                "path": "src/views/About.vue"
+            },
+            "content": []
+        },
+        {
+            "id": "3a51a1f6-9496-41f6-a8ca-deaf41a52f87",
+            "name": "Foo bar",
+            "language": "en-US",
+            "path": "/foo/bar/foo-bar",
+            "stage": "private",
+            "layout": {
+                "id": "about",
+                "type": "page",
+                "name": "About",
+                "description": "Layout for the about page of your website.",
+                "path": "src/views/About.vue"
+            },
+            "content": []
         }
-      ]
-    },
-    {
-      "id": "9f374891-a1b9-422d-931b-32595175851b",
-      "name": "Another page",
-      "language": "en-US",
-      "path": "/another-page",
-      "stage": "wip",
-      "layout": {
-        "id": "about",
-        "type": "page",
-        "name": "About",
-        "description": "Layout for the about page of your website.",
-        "path": "src/views/About.vue"
-      },
-      "content": []
-    },
-    {
-      "id": "3a51a1f6-9496-41f6-a8ca-deaf41a52f87",
-      "name": "Foo bar",
-      "language": "en-US",
-      "path": "/foo/bar/foo-bar",
-      "stage": "private",
-      "layout": {
-        "id": "about",
-        "type": "page",
-        "name": "About",
-        "description": "Layout for the about page of your website.",
-        "path": "src/views/About.vue"
-      },
-      "content": []
+    ],
+    "theme": {
+        "path": "/Users/nils.kolvenbach/elek.io/projects/19628731-0a0e-463b-8b87-de3a5fb61a05/theme",
+        "config": {
+            "name": "elek.io-starter-theme",
+            "version": "0.1.0",
+            "private": true,
+            "description": "A description",
+            "author": "Nils Kolvenbach <info@nils-kolvenbach.de>",
+            "buildDir": "dist",
+            "exportFile": ".elek.io/project.json",
+            "scripts": {
+                "serve": "vue-cli-service serve",
+                "build": "vue-cli-service build",
+                "lint": "vue-cli-service lint"
+            },
+            "dependencies": {
+                "core-js": "^3.6.5",
+                "vue": "^2.6.11",
+                "vue-router": "^3.2.0"
+            },
+            "devDependencies": {
+                "@vue/cli-plugin-babel": "~4.4.0",
+                "@vue/cli-plugin-eslint": "~4.4.0",
+                "@vue/cli-plugin-router": "~4.4.0",
+                "@vue/cli-service": "~4.4.0",
+                "babel-eslint": "^10.1.0",
+                "eslint": "^6.7.2",
+                "eslint-plugin-vue": "^6.2.2",
+                "prerender-spa-plugin": "^3.2.1",
+                "vue-cli-plugin-prerender-spa": "~1.1.6",
+                "vue-template-compiler": "^2.6.11"
+            },
+            "homepage": "https://github.com/elek-io/starter-theme",
+            "navigations": [
+                {
+                    "id": "main",
+                    "items": {
+                        "maximum": 10
+                    }
+                },
+                {
+                    "id": "footerLeft",
+                    "items": {
+                        "maximum": 5
+                    },
+                    "subitems": {
+                        "allowed": false
+                    }
+                },
+                {
+                    "id": "footerRight",
+                    "items": {
+                        "maximum": 5
+                    },
+                    "subitems": {
+                        "allowed": false
+                    }
+                }
+            ],
+            "layouts": [
+                {
+                    "id": "main",
+                    "type": "main",
+                    "name": "Main layout",
+                    "description": "",
+                    "path": "src/App.vue"
+                },
+                {
+                    "id": "homepage",
+                    "type": "page",
+                    "name": "Homepage",
+                    "description": "Layout for the first page of your website.",
+                    "path": "src/views/Home.vue"
+                },
+                {
+                    "id": "post",
+                    "type": "page",
+                    "name": "Post",
+                    "description": "Layout for a blog post.",
+                    "path": "src/views/Post.vue",
+                    "taxonomies": [
+                        {
+                            "id": "category",
+                            "type": "select",
+                            "value": ""
+                        },
+                        {
+                            "id": "tags",
+                            "type": "multiselect",
+                            "value": []
+                        }
+                    ]
+                },
+                {
+                    "id": "about",
+                    "type": "page",
+                    "name": "About",
+                    "description": "Layout for the about page of your website.",
+                    "path": "src/views/About.vue"
+                }
+            ],
+            "license": "",
+            "repository": "git@github.com:elek-io/starter-theme.git"
+        },
+        "blockPositions": [
+            {
+                "id": "welcome-message",
+                "layout": {
+                    "id": "homepage",
+                    "type": "page",
+                    "name": "Homepage",
+                    "description": "Layout for the first page of your website.",
+                    "path": "src/views/Home.vue"
+                },
+                "restrictions": {
+                    "only": [],
+                    "not": [],
+                    "minimum": 0,
+                    "maximum": 0,
+                    "required": false,
+                    "inline": false,
+                    "breaks": false,
+                    "html": false,
+                    "highlightCode": false,
+                    "repeatable": false
+                }
+            },
+            {
+                "id": "post-content",
+                "layout": {
+                    "id": "post",
+                    "type": "page",
+                    "name": "Post",
+                    "description": "Layout for a blog post.",
+                    "path": "src/views/Post.vue",
+                    "taxonomies": [
+                        {
+                            "id": "category",
+                            "type": "select",
+                            "value": ""
+                        },
+                        {
+                            "id": "tags",
+                            "type": "multiselect",
+                            "value": []
+                        }
+                    ]
+                },
+                "restrictions": {
+                    "only": [],
+                    "not": [],
+                    "minimum": 0,
+                    "maximum": 0,
+                    "required": false,
+                    "inline": false,
+                    "breaks": false,
+                    "html": false,
+                    "highlightCode": false,
+                    "repeatable": false
+                }
+            },
+            {
+                "id": "about-content",
+                "layout": {
+                    "id": "about",
+                    "type": "page",
+                    "name": "About",
+                    "description": "Layout for the about page of your website.",
+                    "path": "src/views/About.vue"
+                },
+                "restrictions": {
+                    "only": [],
+                    "not": [],
+                    "minimum": 0,
+                    "maximum": 0,
+                    "required": false,
+                    "inline": false,
+                    "breaks": false,
+                    "html": false,
+                    "highlightCode": false,
+                    "repeatable": false
+                }
+            },
+            {
+                "id": "about-footer",
+                "layout": {
+                    "id": "about",
+                    "type": "page",
+                    "name": "About",
+                    "description": "Layout for the about page of your website.",
+                    "path": "src/views/About.vue"
+                },
+                "restrictions": {
+                    "only": [],
+                    "not": [],
+                    "minimum": 0,
+                    "maximum": 0,
+                    "required": false,
+                    "inline": false,
+                    "breaks": false,
+                    "html": false,
+                    "highlightCode": false,
+                    "repeatable": false
+                }
+            }
+        ]
     }
-  ],
-  "theme": {
-    "path": "/Users/nils.kolvenbach/elek.io/projects/19628731-0a0e-463b-8b87-de3a5fb61a05/theme",
-    "config": {
-      "name": "elek.io-starter-theme",
-      "version": "0.1.0",
-      "private": true,
-      "description": "A description",
-      "author": "Nils Kolvenbach <info@nils-kolvenbach.de>",
-      "buildDir": "dist",
-      "exportFile": ".elek.io/project.json",
-      "scripts": {
-        "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
-      },
-      "dependencies": {
-        "core-js": "^3.6.5",
-        "vue": "^2.6.11",
-        "vue-router": "^3.2.0"
-      },
-      "devDependencies": {
-        "@vue/cli-plugin-babel": "~4.4.0",
-        "@vue/cli-plugin-eslint": "~4.4.0",
-        "@vue/cli-plugin-router": "~4.4.0",
-        "@vue/cli-service": "~4.4.0",
-        "babel-eslint": "^10.1.0",
-        "eslint": "^6.7.2",
-        "eslint-plugin-vue": "^6.2.2",
-        "prerender-spa-plugin": "^3.2.1",
-        "vue-cli-plugin-prerender-spa": "~1.1.6",
-        "vue-template-compiler": "^2.6.11"
-      },
-      "homepage": "https://github.com/elek-io/starter-theme",
-      "navigations": [
-        {
-          "id": "main",
-          "items": {
-            "maximum": 10
-          }
-        },
-        {
-          "id": "footerLeft",
-          "items": {
-            "maximum": 5
-          },
-          "subitems": {
-            "allowed": false
-          }
-        },
-        {
-          "id": "footerRight",
-          "items": {
-            "maximum": 5
-          },
-          "subitems": {
-            "allowed": false
-          }
-        }
-      ],
-      "layouts": [
-        {
-          "id": "main",
-          "type": "main",
-          "name": "Main layout",
-          "description": "",
-          "path": "src/App.vue"
-        },
-        {
-          "id": "homepage",
-          "type": "page",
-          "name": "Homepage",
-          "description": "Layout for the first page of your website.",
-          "path": "src/views/Home.vue"
-        },
-        {
-          "id": "post",
-          "type": "page",
-          "name": "Post",
-          "description": "Layout for a blog post.",
-          "path": "src/views/Post.vue",
-          "taxonomies": [
-            {
-              "id": "category",
-              "type": "select",
-              "value": ""
-            },
-            {
-              "id": "tags",
-              "type": "multiselect",
-              "value": []
-            }
-          ]
-        },
-        {
-          "id": "about",
-          "type": "page",
-          "name": "About",
-          "description": "Layout for the about page of your website.",
-          "path": "src/views/About.vue"
-        }
-      ],
-      "license": "",
-      "repository": "git@github.com:elek-io/starter-theme.git"
-    },
-    "blockPositions": [
-      {
-        "id": "welcome-message",
-        "layout": {
-          "id": "homepage",
-          "type": "page",
-          "name": "Homepage",
-          "description": "Layout for the first page of your website.",
-          "path": "src/views/Home.vue"
-        },
-        "restrictions": {
-          "only": [],
-          "not": [],
-          "minimum": 0,
-          "maximum": 0,
-          "required": false,
-          "inline": false,
-          "breaks": false,
-          "html": false,
-          "highlightCode": false,
-          "repeatable": false
-        }
-      },
-      {
-        "id": "post-content",
-        "layout": {
-          "id": "post",
-          "type": "page",
-          "name": "Post",
-          "description": "Layout for a blog post.",
-          "path": "src/views/Post.vue",
-          "taxonomies": [
-            {
-              "id": "category",
-              "type": "select",
-              "value": ""
-            },
-            {
-              "id": "tags",
-              "type": "multiselect",
-              "value": []
-            }
-          ]
-        },
-        "restrictions": {
-          "only": [],
-          "not": [],
-          "minimum": 0,
-          "maximum": 0,
-          "required": false,
-          "inline": false,
-          "breaks": false,
-          "html": false,
-          "highlightCode": false,
-          "repeatable": false
-        }
-      },
-      {
-        "id": "about-content",
-        "layout": {
-          "id": "about",
-          "type": "page",
-          "name": "About",
-          "description": "Layout for the about page of your website.",
-          "path": "src/views/About.vue"
-        },
-        "restrictions": {
-          "only": [],
-          "not": [],
-          "minimum": 0,
-          "maximum": 0,
-          "required": false,
-          "inline": false,
-          "breaks": false,
-          "html": false,
-          "highlightCode": false,
-          "repeatable": false
-        }
-      },
-      {
-        "id": "about-footer",
-        "layout": {
-          "id": "about",
-          "type": "page",
-          "name": "About",
-          "description": "Layout for the about page of your website.",
-          "path": "src/views/About.vue"
-        },
-        "restrictions": {
-          "only": [],
-          "not": [],
-          "minimum": 0,
-          "maximum": 0,
-          "required": false,
-          "inline": false,
-          "breaks": false,
-          "html": false,
-          "highlightCode": false,
-          "repeatable": false
-        }
-      }
-    ]
-  }
 }
