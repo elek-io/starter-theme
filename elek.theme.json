@@ -48,25 +48,6 @@
             "path": "src/views/Home.vue"
         },
         {
-            "id": "post",
-            "type": "page",
-            "name": "Post",
-            "description": "Layout for a blog post.",
-            "path": "src/views/Post.vue",
-            "taxonomies": [
-                {
-                    "id": "category",
-                    "type": "select",
-                    "value": ""
-                },
-                {
-                    "id": "tags",
-                    "type": "multiselect",
-                    "value": []
-                }
-            ]
-        },
-        {
             "id": "about",
             "type": "page",
             "name": "About",
