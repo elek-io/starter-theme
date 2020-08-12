@@ -1,24 +1,22 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <ElekIo elek-io type="block" id="welcome-message" :only="['paragraph', 'link']" :blocks="blocks"></ElekIo>
+    <div v-if="block('welcome-message')" id="welcome-message" elek-io type="block" v-html="block('welcome-message').html"></div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import ElekIo from '@/components/ElekIo.vue'
-
 export default {
   name: 'Home',
-  components: {
-    HelloWorld,
-    ElekIo
-  },
   props: {
     blocks: Array
+  },
+  methods: {
+    block(id) {
+      return this.blocks.find((block) => {
+        return block.id === id;
+      });
+    }
   }
 }
 </script>

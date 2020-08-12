@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link v-for="page in pages" :to="page.path" :key="page.path">{{ page.name }}</router-link>
+      <router-link v-for="link in navigation" :key="link.to" :to="link.to">{{ link.name }}</router-link>
     </div>
     <router-view/>
   </div>
@@ -9,16 +9,23 @@
 
 <script>
 import Project from '../.elek.io/project.json'
+
 export default {
+  name: 'App',
   computed: {
-    pages: () => {
-      return Project.pages;
+    navigation: () => {
+      return Project.pages.map((page) => {
+        return {
+          to: page.path,
+          name: page.name
+        };
+      });
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,15 +36,15 @@ export default {
 
 #nav {
   padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-  margin-right: 15px;
-}
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-right: 10px;
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>

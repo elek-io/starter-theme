@@ -4,16 +4,19 @@ import Project from '../../.elek.io/project.json'
 
 Vue.use(VueRouter)
 
-  const routes = Project.pages.map((page) => {
-    return {
-      name: page.name,
-      path: page.path,
-      props: {
-        blocks: page.blocks
-      },
-      component: () => import(`../../${page.layout.path}`)
-    };
-  });
+const routes = Project.pages.map((page) => {
+  return {
+    path: page.path,
+    name: page.name,
+    props: {
+      blocks: page.content
+    },
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(`../../${page.layout.path}`)
+  }
+});
 
 const router = new VueRouter({
   mode: 'history',
