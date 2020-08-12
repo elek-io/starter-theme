@@ -8,6 +8,9 @@ const routes = Project.pages.map((page) => {
   return {
     path: page.path,
     name: page.name,
+    props: {
+      blocks: page.content
+    },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
