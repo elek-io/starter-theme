@@ -1,0 +1,79 @@
+{
+    "name": "elek.io-starter-theme",
+    "version": "0.1.0",
+    "description": "A description",
+    "author": "Nils Kolvenbach <info@nils-kolvenbach.de>",
+    "buildDir": "dist",
+    "exportFile": ".elek.io/project.json",
+    "homepage": "https://github.com/elek-io/starter-theme",
+    "navigations": [
+        {
+            "id": "main",
+            "items": {
+                "maximum": 10
+            }
+        },
+        {
+            "id": "footerLeft",
+            "items": {
+                "maximum": 5
+            },
+            "subitems": {
+                "allowed": false
+            }
+        },
+        {
+            "id": "footerRight",
+            "items": {
+                "maximum": 5
+            },
+            "subitems": {
+                "allowed": false
+            }
+        }
+    ],
+    "layouts": [
+        {
+            "id": "main",
+            "type": "main",
+            "name": "Main layout",
+            "description": "",
+            "path": "src/App.vue"
+        },
+        {
+            "id": "homepage",
+            "type": "page",
+            "name": "Homepage",
+            "description": "Layout for the first page of your website.",
+            "path": "src/views/Home.vue"
+        },
+        {
+            "id": "post",
+            "type": "page",
+            "name": "Post",
+            "description": "Layout for a blog post.",
+            "path": "src/views/Post.vue",
+            "taxonomies": [
+                {
+                    "id": "category",
+                    "type": "select",
+                    "value": ""
+                },
+                {
+                    "id": "tags",
+                    "type": "multiselect",
+                    "value": []
+                }
+            ]
+        },
+        {
+            "id": "about",
+            "type": "page",
+            "name": "About",
+            "description": "Layout for the about page of your website.",
+            "path": "src/views/About.vue"
+        }
+    ],
+    "license": "",
+    "repository": "git@github.com:elek-io/starter-theme.git"
+}
