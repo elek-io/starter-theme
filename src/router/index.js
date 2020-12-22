@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 
 const routes = Project.pages.map((page) => {
   return {
-    path: page.path,
+    path: page.uriPath,
     name: page.name,
     props: {
       blocks: page.content

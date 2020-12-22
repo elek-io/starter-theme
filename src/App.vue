@@ -16,7 +16,7 @@ export default {
     navigation: () => {
       return Project.pages.map((page) => {
         return {
-          to: page.path,
+          to: page.uriPath,
           name: page.name
         };
       });
