@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <div v-if="block('welcome-message')" id="welcome-message" elek-io type="block" v-html="block('welcome-message').html"></div>
+    <img elek-io-element="welcome-image" elek-io-element-type="image" v-if="welcomeImage" :alt="welcomeImage.alt" :src="welcomeImage.src">
+    <div elek-io-block="welcome-message" v-if="welcomeMessage" v-html="welcomeMessage.html"></div>
   </div>
 </template>
 
@@ -11,10 +11,15 @@ export default {
   props: {
     blocks: Array
   },
-  methods: {
-    block(id) {
+  computed: {
+    welcomeImage() {
       return this.blocks.find((block) => {
-        return block.id === id;
+        return block.id === 'welcome-image';
+      });
+    },
+    welcomeMessage() {
+      return this.blocks.find((block) => {
+        return block.id === 'welcome-message';
       });
     }
   }
